@@ -24,13 +24,13 @@ To install mongoDb, follow this installation guide <br>
 [windows Installation](https://medium.com/@LondonAppBrewery/how-to-download-install-mongodb-on-windows-4ee4b3493514) | [mac Installation](https://www.geeksforgeeks.org/how-to-install-mongodb-on-macos/)
 
 - Step 1: Clone this repository. you can do this by running ``` git clone https://github.com/FOR-TIMI/Social-Network-API.git``` in your terminal
-- image.png
+- ![image](https://user-images.githubusercontent.com/104241247/199159397-7d3b620c-31fa-4ca5-b4ae-ade3f6e2918a.png)
 - Step 2: Install dependencies by running the ``` npm install ``` command in the command line
 - Step 3: Open your code editor by running the command ``` code . ```
 - step 4: Start the server by running ``` npm start ``` in the terminal
 
 
-## Licenses
+## License
 ### MIT License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -41,8 +41,9 @@ To install mongoDb, follow this installation guide <br>
 - MongoDB
 - Mongoose
 
-## Screenshot
-
+## Screenshots
+- ![image](https://user-images.githubusercontent.com/104241247/199159120-5007ec83-8d0d-435e-b69d-02c8ad9ad073.png)
+- ![image](https://user-images.githubusercontent.com/104241247/199159217-17d95199-cafc-44a3-86d0-1331cdd37340.png)
 
 
 

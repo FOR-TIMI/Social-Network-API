@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { 
      getAllUsers
+    ,addFriend
+    ,removeFriend
     ,getOneUser
     ,deleteUser
     ,updateUser
@@ -25,6 +27,15 @@ router
     .get(getOneUser)
     .put(updateUser)
     .delete(deleteUser)
+
+
+/**
+ * Expect endpoint : /api/user/:id/friends/:friendId
+ */ 
+ router
+    .route('/:id/friends/:friendId')
+    .post(addFriend)
+    .delete(removeFriend)
 
 
 

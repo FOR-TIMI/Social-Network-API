@@ -65,6 +65,7 @@ const userController = {
         try{
             const user = await User.create(body)
             res.json(user)
+            return;
         }
         catch(err){
             res.status(500).json(err)
@@ -105,18 +106,58 @@ const userController = {
                     $in: deletedUser.thoughts
                 }
             })
-            if(!deletedUser){
+
+            res.json({deletedUser,deleteThoughts})
+            return;
+        }
+        catch(err){
+            res.status(404).json({message: 'Could not find that user', err})
+        }
+    
+    },
+
+    //To add a friend
+    async addFriend({params}, res){
+        try{
+            const user = await User.findOneAndUpdate(
+                { _id : params.id},
+                {$push: {friends: params.friendId}},
+                {new: true} 
+            )
+
+            if(!user){
                 return res
                 .status(404)
-                .json({message: "Could not find that pizza"})
+                .json({message: `No user found with this id`})
             }
-            res.json({deletedUser,deleteThoughts})
+
+            res.json(user)
             return;
         }
         catch(err){
             res.status(500).json(err)
         }
-    
+    },
+
+    //To remove a friend
+    async removeFriend({params},res){
+       try{
+            const user = await User.findOneAndUpdate(
+                {_id: params.id},
+                {$pull: {friends: params.friendId}},
+                {new: true}
+            )
+            if(!user){
+                return res
+                .status(500)
+                .json({message: `Couldn't find that user`})
+            }
+
+            res.json(user)
+       }
+       catch(err){
+        res.status(500).json(err)
+       }
     }
 
 

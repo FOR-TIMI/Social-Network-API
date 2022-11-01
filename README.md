@@ -5,7 +5,7 @@ API for a social network that uses a NoSQL database  to allow website to handle 
 - [Purpose](#purpose)
 - [Installation](#installation)
 - [License](#license)
-- [demo video link](https://bloggersintech.herokuapp.com/login)
+- [demo video link](https://drive.google.com/file/d/10QTfcD69THOEslE7FeXGsrXj6E-9eeps/view)
 - [Contributions](#contribution)
 
 ## Purpose

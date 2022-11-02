@@ -4,6 +4,11 @@ API for a social network that uses a NoSQL database  to allow website to handle 
 ## Table of Content
 - [Purpose](#purpose)
 - [Installation](#installation)
+- Routes
+  - [Users](#users)
+  - [Friends](#friends)
+  - [Thoughts](#thoughts)
+  - [Reactions](#reactions)
 - [License](#license)
 - [demo video link](https://drive.google.com/file/d/10QTfcD69THOEslE7FeXGsrXj6E-9eeps/view)
 - [Contributions](#contribution)
@@ -28,7 +33,42 @@ To install mongoDb, follow this installation guide <br>
 - Step 2: Install dependencies by running the ``` npm install ``` command in the command line
 - Step 3: Open your code editor by running the command ``` code . ```
 - step 4: Start the server by running ``` npm start ``` in the terminal
+- step 5: - Open any application that simplifies the interaction and design of HTTP-based APIs like [insomnia](https://insomnia.rest/download), [postman](https://www.postman.com/) etc.
+- step 6: Create, read, update, and delete Users, thoughts, and reactions using these urls:
 
+### Users: 
+
+| HTTP Method 	| Route                                   	| Description                                                                                                                                                         	|
+|-------------	|-----------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| GET         	| http://localhost:3001/api/users         	| To `GET` all users                                                                                                                                                  	|
+| GET         	| http://localhost:3001/api/users/:userId 	| To `GET` a single user with that `userId`                                                                                                                           	|
+| POST        	| http://localhost:3001/api/users         	| To create a new user. <br> sample Data:  <pre>{  <br>"username": "lernantino",  <br>"email": "lernantino@gmail.com"  <br>}</pre>                                    	|
+| PUT         	| http://localhost:3001/api/users/:userId 	| To update an existing user `userId` details. <br> sample Data:  <pre>{  <br>"username": "lernantinoUpdate",  <br>"email": "lernantinoUpdate@gmail.com"  <br>}</pre> 	|
+| DELETE      	| http://localhost:3001/api/users/:userId 	| To delete an existing user `userId`  and all thoughts related to the user `userId`                                                                                                                                	|                                                                                                                                	|
+
+
+### Friends:
+
+| HTTP Method 	|                           Route                           	| Description                                                                                                                                                         	|
+|:-----------:	|:---------------------------------------------------------:	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+|     POST    	| http://localhost:3001/api/users/:userId/friends/:friendId 	| To add a friend `friendId` to a user `userId`                                                                                                                       	|
+|    DELETE   	| http://localhost:3001/api/users/:userId/friends/:friendId 	| To remove a friend `friendId` from a user `userId`  friend list                                                                                                     	|
+
+### Thoughts:
+
+| HTTP Method 	| Route                                         	| Description                                                                                                                                                                                                                                                     	|
+|:-----------:	|-----------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+|     GET     	| http://localhost:3001/api/thoughts            	| To get all thoughts                                                                                                                                                                                                                                             	|
+|     GET     	| http://localhost:3001/api/thoughts/:thoughtId 	| To get a single thought by its _id `thoughtId`                                                                                                                                                                                                                  	|
+|     POST    	| http://localhost:3001/api/thoughts            	| Creates new thought and push the created thought's _id to the associated user's thoughts array field). <br>Sample Data:  <pre>  { <br>  "thought_text": "here's a cool thought", <br>  "username": "testUser",<br>  "userId" : "5dfghsgfhghjk435"  <br>} </pre> 	|
+|     PUT     	| http://localhost:3001/api/thoughts/:thoughtId 	| To update a thought by its _id `thoughtId`                                                                                                                                                                                                                      	|
+|    DELETE   	| http://localhost:3001/api/thoughts/:thoughtId 	| To delete a thought by its _id `thoughtId`                                                                                                                                                                                                                      	|
+
+### Reactions:
+| HTTP Method 	| Route                                                                               	| Description                                                             	|
+|-------------	|-------------------------------------------------------------------------------------	|-------------------------------------------------------------------------	|
+| POST        	| http://localhost:3001/api/thoughts/:thoughtId/reactions                             	| To create a reaction stored in a single thought's reactions array field 	|
+| DELETE      	| http://localhost:3001/api/thoughts/:thoughtId/reactions?reactionId=6fdsgsgnhfdmhfdf 	| To pull and remove a reaction by the reaction's `reactionId` value      	|
 
 ## License
 ### MIT License

@@ -11,7 +11,7 @@
  <img src="https://img.shields.io/badge/Nodemon-Nodemon-green?style=for-the-badge&logo=nodemon&logoColor=%2361DAFB">
 </p>
 <p align="center">
- <img src ="https://img.shields.io/badge/API-SOCIAL%20API-orange?style=for-the-badge&logo=API&logoColor=%2361DAFB"/>
+ <img src ="https://img.shields.io/badge/API-REST%20API-orange?style=for-the-badge&logo=rest&logoColor=%2361DAFB"/>
 </p>
 API for a social network that uses a NoSQL database  to allow website to handle large amounts of unstructured data
 

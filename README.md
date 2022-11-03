@@ -13,7 +13,10 @@
 <p align="center">
  <img src ="https://img.shields.io/badge/API-REST%20API-orange?style=for-the-badge&logo=rest&logoColor=%2361DAFB"/>
 </p>
-API for a social network that uses a NoSQL database  to allow website to handle large amounts of unstructured data
+
+## Description
+API for a social network that uses a NoSQL database to allow website to handle large amounts of unstructured data.
+when you enter the command to invoke the application, your server is started and the Mongoose models are synced to the MongoDB database then you are able to successfully create users, create and delete reactions to thoughts , add to and remove friends from a user’s friend list.
 
 ## Table of Content
 - [Purpose](#purpose)

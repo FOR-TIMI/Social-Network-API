@@ -1,4 +1,18 @@
-# Social-Network-API [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ <h1 align="center">Social-Network-API </h1>
+<p align="center">
+ <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&logo=mit&logoColor=white""/>
+ <img src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white"/>
+ <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"/>
+ <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"/>
+</p>
+<p align="center">
+ <img src ="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"/>
+ <img src ="https://img.shields.io/badge/Mongoose-Mongoose-red?style=for-the-badge&logo=mongoose&logoColor=%2361DAFB"/>
+ <img src="https://img.shields.io/badge/Nodemon-Nodemon-green?style=for-the-badge&logo=nodemon&logoColor=%2361DAFB">
+</p>
+<p align="center">
+ <img src ="https://img.shields.io/badge/API-SOCIAL%20API-orange?style=for-the-badge&logo=API&logoColor=%2361DAFB"/>
+</p>
 API for a social network that uses a NoSQL database  to allow website to handle large amounts of unstructured data
 
 ## Table of Content
@@ -33,7 +47,7 @@ To install mongoDb, follow this installation guide <br>
 - Step 2: Install dependencies by running the ``` npm install ``` command in the command line
 - Step 3: Open your code editor by running the command ``` code . ```
 - step 4: Start the server by running ``` npm start ``` in the terminal
-- step 5: Open any application that simplifies the interaction and design of HTTP-based APIs like [insomnia](https://insomnia.rest/download), [postman](https://www.postman.com/) etc.
+- step 5: - Open any application that simplifies the interaction and design of HTTP-based APIs like [insomnia](https://insomnia.rest/download), [postman](https://www.postman.com/) etc.
 - step 6: Create, read, update, and delete Users, thoughts, and reactions using these endpoints:
 
 ### Users: 

@@ -33,7 +33,7 @@ To install mongoDb, follow this installation guide <br>
 - Step 2: Install dependencies by running the ``` npm install ``` command in the command line
 - Step 3: Open your code editor by running the command ``` code . ```
 - step 4: Start the server by running ``` npm start ``` in the terminal
-- step 5: - Open any application that simplifies the interaction and design of HTTP-based APIs like [insomnia](https://insomnia.rest/download), [postman](https://www.postman.com/) etc.
+- step 5: Open any application that simplifies the interaction and design of HTTP-based APIs like [insomnia](https://insomnia.rest/download), [postman](https://www.postman.com/) etc.
 - step 6: Create, read, update, and delete Users, thoughts, and reactions using these endpoints:
 
 ### Users: 
